@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832BC810177E746A008D7BFE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC80F177E746A008D7BFE /* Cocoa.framework */; };
+		832BC814177E747E008D7BFE /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC811177E747E008D7BFE /* SDL_image.framework */; };
+		832BC815177E747E008D7BFE /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC812177E747E008D7BFE /* SDL_ttf.framework */; };
+		832BC816177E747E008D7BFE /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC813177E747E008D7BFE /* SDL.framework */; };
+		832BC819177E74C0008D7BFE /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 832BC818177E74C0008D7BFE /* SDLMain.m */; };
 		836DB234177E63A40050B240 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 836DB233177E63A40050B240 /* main.cpp */; };
 		836DB236177E63A40050B240 /* Mister_Farmer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 836DB235177E63A40050B240 /* Mister_Farmer.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +30,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		832BC80F177E746A008D7BFE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		832BC811177E747E008D7BFE /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
+		832BC812177E747E008D7BFE /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
+		832BC813177E747E008D7BFE /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		832BC817177E74C0008D7BFE /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		832BC818177E74C0008D7BFE /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		832BC81C177E75C9008D7BFE /* lazy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lazy.ttf; sourceTree = "<group>"; };
+		832BC81E177E75C9008D7BFE /* basic_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_character.png; sourceTree = "<group>"; };
 		836DB22F177E63A40050B240 /* Mister Farmer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mister Farmer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		836DB233177E63A40050B240 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		836DB235177E63A40050B240 /* Mister_Farmer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mister_Farmer.1; sourceTree = "<group>"; };
@@ -35,15 +48,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832BC814177E747E008D7BFE /* SDL_image.framework in Frameworks */,
+				832BC815177E747E008D7BFE /* SDL_ttf.framework in Frameworks */,
+				832BC816177E747E008D7BFE /* SDL.framework in Frameworks */,
+				832BC810177E746A008D7BFE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832BC81A177E75C9008D7BFE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				832BC81B177E75C9008D7BFE /* fonts */,
+				832BC81D177E75C9008D7BFE /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		832BC81B177E75C9008D7BFE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				832BC81C177E75C9008D7BFE /* lazy.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		832BC81D177E75C9008D7BFE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				832BC81E177E75C9008D7BFE /* basic_character.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		836DB224177E63A40050B240 = {
 			isa = PBXGroup;
 			children = (
+				832BC811177E747E008D7BFE /* SDL_image.framework */,
+				832BC812177E747E008D7BFE /* SDL_ttf.framework */,
+				832BC813177E747E008D7BFE /* SDL.framework */,
+				832BC80F177E746A008D7BFE /* Cocoa.framework */,
 				836DB232177E63A40050B240 /* Mister Farmer */,
 				836DB230177E63A40050B240 /* Products */,
 			);
@@ -60,6 +106,9 @@
 		836DB232177E63A40050B240 /* Mister Farmer */ = {
 			isa = PBXGroup;
 			children = (
+				832BC81A177E75C9008D7BFE /* assets */,
+				832BC817177E74C0008D7BFE /* SDLMain.h */,
+				832BC818177E74C0008D7BFE /* SDLMain.m */,
 				836DB233177E63A40050B240 /* main.cpp */,
 				836DB235177E63A40050B240 /* Mister_Farmer.1 */,
 			);
@@ -118,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836DB234177E63A40050B240 /* main.cpp in Sources */,
+				832BC819177E74C0008D7BFE /* SDLMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +228,7 @@
 		836DB23A177E63A40050B240 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -185,6 +236,7 @@
 		836DB23B177E63A40050B240 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -208,6 +260,7 @@
 				836DB23B177E63A40050B240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
