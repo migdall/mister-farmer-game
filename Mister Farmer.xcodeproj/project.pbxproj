@@ -1,0 +1,215 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		836DB234177E63A40050B240 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 836DB233177E63A40050B240 /* main.cpp */; };
+		836DB236177E63A40050B240 /* Mister_Farmer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 836DB235177E63A40050B240 /* Mister_Farmer.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		836DB22D177E63A40050B240 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				836DB236177E63A40050B240 /* Mister_Farmer.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		836DB22F177E63A40050B240 /* Mister Farmer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mister Farmer"; sourceTree = BUILT_PRODUCTS_DIR; };
+		836DB233177E63A40050B240 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		836DB235177E63A40050B240 /* Mister_Farmer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mister_Farmer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		836DB22C177E63A40050B240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		836DB224177E63A40050B240 = {
+			isa = PBXGroup;
+			children = (
+				836DB232177E63A40050B240 /* Mister Farmer */,
+				836DB230177E63A40050B240 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		836DB230177E63A40050B240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				836DB22F177E63A40050B240 /* Mister Farmer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		836DB232177E63A40050B240 /* Mister Farmer */ = {
+			isa = PBXGroup;
+			children = (
+				836DB233177E63A40050B240 /* main.cpp */,
+				836DB235177E63A40050B240 /* Mister_Farmer.1 */,
+			);
+			path = "Mister Farmer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		836DB22E177E63A40050B240 /* Mister Farmer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836DB239177E63A40050B240 /* Build configuration list for PBXNativeTarget "Mister Farmer" */;
+			buildPhases = (
+				836DB22B177E63A40050B240 /* Sources */,
+				836DB22C177E63A40050B240 /* Frameworks */,
+				836DB22D177E63A40050B240 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mister Farmer";
+			productName = "Mister Farmer";
+			productReference = 836DB22F177E63A40050B240 /* Mister Farmer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		836DB226177E63A40050B240 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Reverent Studios";
+			};
+			buildConfigurationList = 836DB229177E63A40050B240 /* Build configuration list for PBXProject "Mister Farmer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 836DB224177E63A40050B240;
+			productRefGroup = 836DB230177E63A40050B240 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				836DB22E177E63A40050B240 /* Mister Farmer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		836DB22B177E63A40050B240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836DB234177E63A40050B240 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		836DB237177E63A40050B240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		836DB238177E63A40050B240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		836DB23A177E63A40050B240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		836DB23B177E63A40050B240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		836DB229177E63A40050B240 /* Build configuration list for PBXProject "Mister Farmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836DB237177E63A40050B240 /* Debug */,
+				836DB238177E63A40050B240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836DB239177E63A40050B240 /* Build configuration list for PBXNativeTarget "Mister Farmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836DB23A177E63A40050B240 /* Debug */,
+				836DB23B177E63A40050B240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 836DB226177E63A40050B240 /* Project object */;
+}
