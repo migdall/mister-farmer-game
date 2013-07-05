@@ -112,7 +112,7 @@ bool init()
     }
     
     //Set the window caption
-    SDL_WM_SetCaption( "The Advent", NULL );
+    SDL_WM_SetCaption( "Mister Farmer", NULL );
     
     //If everything initialized fine
     return true;
@@ -229,7 +229,7 @@ int main( int argc, char* args[] )
                 //Set the begin message surface
                 switch( event.key.keysym.sym )
                 {
-                    case SDLK_SPACE: clearScreen(); message = beginMessage; level0 = true; break;
+                    case SDLK_SPACE: if( level1 == false ) {clearScreen(); message = beginMessage; level0 = true;} break;
                     case SDLK_RIGHT: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->x += 20;} break;
                     case SDLK_LEFT: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->x -= 20;} break;
                     case SDLK_UP: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->y -= 20;} break;
