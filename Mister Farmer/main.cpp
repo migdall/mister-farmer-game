@@ -121,7 +121,7 @@ bool init()
 bool load_files()
 {
     //Open the font
-    font = TTF_OpenFont( "/Users/mehryn/Documents/Code/mister_farmer/Mister Farmer/Mister Farmer/assets/fonts/lazy.ttf", 28 );
+    font = TTF_OpenFont( "../assets/fonts/lazy.ttf", 28 );
     
     //If there was an error in loading the font
     if( font == NULL )
@@ -130,7 +130,7 @@ bool load_files()
     }
     
     // Load the player's avatar
-    player = load_image( "/Users/mehryn/Documents/Code/mister_farmer/Mister Farmer/Mister Farmer/assets/images/basic_character.png" );
+    player = load_image( "../assets/images/basic_character.png" );
     
     // Check if the image player image loaded
     if( player == NULL )
