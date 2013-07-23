@@ -38,6 +38,7 @@
 		832BC818177E74C0008D7BFE /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
 		832BC81C177E75C9008D7BFE /* lazy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lazy.ttf; sourceTree = "<group>"; };
 		832BC81E177E75C9008D7BFE /* basic_character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basic_character.png; sourceTree = "<group>"; };
+		8363A054179F11CD0052423F /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
 		836DB22F177E63A40050B240 /* Mister Farmer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mister Farmer"; sourceTree = BUILT_PRODUCTS_DIR; };
 		836DB233177E63A40050B240 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		836DB235177E63A40050B240 /* Mister_Farmer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mister_Farmer.1; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				832BC818177E74C0008D7BFE /* SDLMain.m */,
 				836DB233177E63A40050B240 /* main.cpp */,
 				836DB235177E63A40050B240 /* Mister_Farmer.1 */,
+				8363A054179F11CD0052423F /* render.h */,
 			);
 			path = "Mister Farmer";
 			sourceTree = "<group>";
