@@ -35,12 +35,19 @@
 #include "SDL_ttf/SDL_ttf.h"
 
 #include <unordered_map>
+#include <vector>
 #include <string>
 
 class Render
 {
 private:
+    // privately global mapping of asset name as the key held by a container
+    // the value is an integer to collect SDL_Surface resource at the index
+    // location in the loaded static private property of the Render system
     static std::unordered_multimap<std::string,int> bin;
+    static std::vector<SDL_Surface*> loaded;
+public:
+    Render();
 };
 
 #endif

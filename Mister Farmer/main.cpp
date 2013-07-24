@@ -53,7 +53,7 @@ SDL_Surface* clear = NULL;
 SDL_Event event;
 
 // The font that's going to be used
-TTF_Font *font = NULL;
+TTF_Font* font = NULL;
 
 // The color of the font
 SDL_Color textColor = { 255, 255, 255 };
@@ -66,8 +66,8 @@ SDL_Rect* playerRect = NULL;
 bool level0 = false;
 bool level1 = false;
 
-// Render
-Render renderer;
+// Declare the render system
+Render* renderer = NULL;
 
 SDL_Surface *load_image( std::string filename )
 {
@@ -131,6 +131,9 @@ bool init()
         return false;
     }
     
+    // Initialize the render system
+    renderer = new Render();
+    
     //Initialize SDL_ttf
     if( TTF_Init() == -1 )
     {
@@ -182,6 +185,9 @@ void clean_up()
     
     //Quit SDL_ttf
     TTF_Quit();
+    
+    // Quit Render
+    delete renderer;
     
     //Quit SDL
     SDL_Quit();
