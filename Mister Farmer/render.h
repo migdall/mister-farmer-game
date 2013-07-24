@@ -34,8 +34,13 @@
 #include "SDL_image/SDL_image.h"
 #include "SDL_ttf/SDL_ttf.h"
 
-#include <vector>
+#include <unordered_map>
+#include <string>
 
-std::vector<SDL_Surface*> renderBin;
+class Render
+{
+private:
+    static std::unordered_multimap<std::string,int> bin;
+};
 
 #endif
