@@ -66,6 +66,9 @@ SDL_Rect* playerRect = NULL;
 bool level0 = false;
 bool level1 = false;
 
+// Render
+Render renderer;
+
 SDL_Surface *load_image( std::string filename )
 {
     //The image that's loaded
