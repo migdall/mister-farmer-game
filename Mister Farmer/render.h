@@ -48,6 +48,9 @@ private:
     static std::vector<SDL_Surface*> loaded;
 public:
     Render();
+    ~Render();
+    
+    int load();
 };
 
 #endif
