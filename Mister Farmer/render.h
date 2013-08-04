@@ -50,7 +50,7 @@ public:
     Render();
     ~Render();
     
-    int load();
+    static int load();
 };
 
 #endif

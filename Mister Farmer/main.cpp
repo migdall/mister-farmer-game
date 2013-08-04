@@ -147,7 +147,7 @@ bool init()
     return true;
 }
 
-bool load_files()
+bool load()
 {
     //Open the font
     font = TTF_OpenFont( "../assets/fonts/lazy.ttf", 28 );
@@ -218,7 +218,7 @@ int main( int argc, char* args[] )
     }
     
     //Load the files
-    if( load_files() == false )
+    if( load() == false )
     {
         return 1;
     }

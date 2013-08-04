@@ -29,12 +29,19 @@
 
 #include "render.h"
 
+#include <string>
+
 // initialize static properties for class
 std::vector<SDL_Surface*> Render::loaded;
 std::unordered_multimap<std::string,int> Render::bin;
 
+// paths to predefined assets
+const std::string lazy_font = "../assets/fonts/lazy.ttf";
+const std::string basic_character = "../assets/images/basic_character.png";
+
 Render::Render()
 {
+    // does nothing
 }
 
 Render::~Render()
@@ -48,9 +55,10 @@ Render::~Render()
     loaded.erase(loaded.begin(), loaded.end());
 }
 
-// for loading any predefined
+// static method for loading any predefined assets
 int Render::load()
 {
+    
     // return 1 that everything loaded fine
     return 1;
 }
