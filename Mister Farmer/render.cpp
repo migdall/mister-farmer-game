@@ -35,13 +35,20 @@
 std::vector<SDL_Surface*> Render::loaded;
 std::unordered_multimap<std::string,int> Render::bin;
 
+SDL_Surface* Render::screen;
+
 // paths to predefined assets
 const std::string lazy_font = "../assets/fonts/lazy.ttf";
 const std::string basic_character = "../assets/images/basic_character.png";
 
+//The attributes of the screen
+const int SCREEN_WIDTH = 640;
+const int SCREEN_HEIGHT = 480;
+const int SCREEN_BPP = 32;
+
 Render::Render()
 {
-    // does nothing
+    screen = SDL_SetVideoMode( SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_SWSURFACE );
 }
 
 Render::~Render()

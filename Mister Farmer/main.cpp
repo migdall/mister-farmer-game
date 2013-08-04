@@ -42,6 +42,7 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 const int SCREEN_BPP = 32;
 
+
 // Surfaces that will be used
 SDL_Surface* message = NULL;
 SDL_Surface* beginMessage = NULL;
@@ -130,10 +131,7 @@ bool init()
     {
         return false;
     }
-    
-    // Initialize the render system
-    renderer = new Render();
-    
+        
     //Initialize SDL_ttf
     if( TTF_Init() == -1 )
     {

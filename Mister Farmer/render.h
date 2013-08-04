@@ -46,6 +46,9 @@ private:
     // location in the loaded static private property of the Render system
     static std::unordered_multimap<std::string,int> bin;
     static std::vector<SDL_Surface*> loaded;
+    
+    // SDL needed properties
+    static SDL_Surface* screen;
 public:
     Render();
     ~Render();
