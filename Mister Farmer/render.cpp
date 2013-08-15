@@ -30,6 +30,7 @@
 #include "render.h"
 
 #include <string>
+#include <iostream>
 
 // initialize static properties for class
 std::vector<SDL_Surface*> Render::loaded;
@@ -49,6 +50,16 @@ const int SCREEN_BPP = 32;
 Render::Render()
 {
     screen = SDL_SetVideoMode( SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_SWSURFACE );
+    
+    //If there was an error in setting up the screen
+    if( screen == NULL )
+    {
+        // output an error message
+        std::cout << "Error: Screen was not setup correctly. Render::Render()" << std::endl;
+    }
+    
+    //Set the window caption
+    SDL_WM_SetCaption( "Mister Farmer", NULL );
 }
 
 Render::~Render()
