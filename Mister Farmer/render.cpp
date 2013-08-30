@@ -76,6 +76,8 @@ Render::~Render()
 // static method for loading any predefined assets
 int Render::load()
 {
+    // predefined
+    std::string player_avatar_texture_loc = "../assets/images/basic_character.png";
     
     // return 1 that everything loaded fine
     return 1;
