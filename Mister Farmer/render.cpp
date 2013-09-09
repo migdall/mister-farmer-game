@@ -42,10 +42,13 @@ SDL_Surface* Render::screen;
 const std::string lazy_font = "../assets/fonts/lazy.ttf";
 const std::string basic_character = "../assets/images/basic_character.png";
 
-//The attributes of the screen
+// The attributes of the screen
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 const int SCREEN_BPP = 32;
+
+// typedef definitions
+typedef std::vector<int>::size_type vsint;
 
 Render::Render()
 {
@@ -73,11 +76,53 @@ Render::~Render()
     loaded.erase(loaded.begin(), loaded.end());
 }
 
+SDL_Surface* Render::load_image( std::string filename )
+{
+    //The image that's loaded
+    SDL_Surface* loadedImage = NULL;
+    
+    //The optimized surface that will be used
+    SDL_Surface* optimizedImage = NULL;
+    
+    //Load the image
+    loadedImage = IMG_Load( filename.c_str() );
+    
+    //If the image loaded
+    if( loadedImage != NULL )
+    {
+        //Create an optimized surface
+        optimizedImage = SDL_DisplayFormat( loadedImage );
+        
+        //Free the old surface
+        SDL_FreeSurface( loadedImage );
+        
+        //If the surface was optimized
+        if( optimizedImage != NULL )
+        {
+            //Color key surface
+            SDL_SetColorKey( optimizedImage, SDL_SRCCOLORKEY, SDL_MapRGB( optimizedImage->format, 0, 0xFF, 0xFF ) );
+        }
+    }
+    
+    //Return the optimized surface
+    return optimizedImage;
+}
+
 // static method for loading any predefined assets
 int Render::load()
 {
     // predefined
     std::string player_avatar_texture_loc = "../assets/images/basic_character.png";
+    
+    // load
+    vsint size_before = loaded.size();
+    loaded.push_back( load_image(player_avatar_texture_loc) );
+    vsint size_after = loaded.size();
+    int index = (unsigned int)size_after - (unsigned int)size_before;
+    
+    // set bin for index of texture
+    std::pair<std::string,int> texture_string_index (player_avatar_texture_loc,index);
+    bin.insert(texture_string_index);
     
     // return 1 that everything loaded fine
     return 1;

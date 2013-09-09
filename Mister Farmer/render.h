@@ -54,6 +54,7 @@ public:
     ~Render();
     
     static int load();
+    static SDL_Surface* load_image( std::string filename );
 };
 
 #endif
