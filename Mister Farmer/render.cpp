@@ -117,8 +117,7 @@ int Render::load()
     // load
     vsint size_before = loaded.size();
     loaded.push_back( load_image(player_avatar_texture_loc) );
-    vsint size_after = loaded.size();
-    int index = (unsigned int)size_after - (unsigned int)size_before;
+    int index = (unsigned int)size_before;
     
     // set bin for index of texture
     std::pair<std::string,int> texture_string_index (player_avatar_texture_loc,index);
