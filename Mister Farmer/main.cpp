@@ -177,6 +177,7 @@ void clean_up()
     SDL_FreeSurface( message );
     SDL_FreeSurface( beginMessage );
     SDL_FreeSurface( player );
+    SDL_FreeSurface( screen );
     
     //Close the font that was used
     TTF_CloseFont( font );

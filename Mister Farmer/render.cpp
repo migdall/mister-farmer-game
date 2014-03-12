@@ -67,11 +67,14 @@ Render::Render()
 
 Render::~Render()
 {
+    // delete the screen pointer
+    SDL_FreeSurface( screen );
+    
     // erase SDL_Surface references
     SDL_Surface* temp = NULL;
     for(int i = 0; i < loaded.size(); i++) {
         temp = loaded[i];
-        delete temp;
+        SDL_FreeSurface( temp );
     }
     loaded.erase(loaded.begin(), loaded.end());
 }
