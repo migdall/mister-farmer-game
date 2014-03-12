@@ -55,6 +55,7 @@ public:
     
     static int load();
     static SDL_Surface* load_image( std::string filename );
+    static SDL_Surface* getScreen();
 };
 
 #endif

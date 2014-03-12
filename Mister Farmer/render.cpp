@@ -126,3 +126,8 @@ int Render::load()
     // return 1 that everything loaded fine
     return 1;
 }
+
+SDL_Surface* Render::getScreen()
+{
+    return screen;
+}

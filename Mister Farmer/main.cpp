@@ -123,8 +123,11 @@ bool init()
         return false;
     }
     
+    // Initialize the Render system
+    renderer = new Render();
+    
     //Set up the screen
-    screen = SDL_SetVideoMode( SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_SWSURFACE );
+    screen = Render::getScreen();
     
     //If there was an error in setting up the screen
     if( screen == NULL )
