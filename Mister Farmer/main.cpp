@@ -141,9 +141,6 @@ bool init()
         return false;
     }
     
-    //Set the window caption
-    SDL_WM_SetCaption( "Mister Farmer", NULL );
-    
     //If everything initialized fine
     return true;
 }
