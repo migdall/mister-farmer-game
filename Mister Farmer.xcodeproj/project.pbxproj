@@ -44,6 +44,8 @@
 		836DB233177E63A40050B240 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		836DB235177E63A40050B240 /* Mister_Farmer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Mister_Farmer.1; sourceTree = "<group>"; };
 		8397AAFD179FAC8A00A1C4A3 /* render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = render.cpp; sourceTree = "<group>"; };
+		83B24A521974F45200E58BD8 /* gameobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameobject.h; sourceTree = "<group>"; };
+		83B24A531974F57100E58BD8 /* rendercomponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rendercomponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,8 @@
 				836DB235177E63A40050B240 /* Mister_Farmer.1 */,
 				8363A054179F11CD0052423F /* render.h */,
 				8397AAFD179FAC8A00A1C4A3 /* render.cpp */,
+				83B24A521974F45200E58BD8 /* gameobject.h */,
+				83B24A531974F57100E58BD8 /* rendercomponent.h */,
 			);
 			path = "Mister Farmer";
 			sourceTree = "<group>";
