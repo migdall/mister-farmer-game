@@ -44,28 +44,11 @@ const int SCREEN_BPP = 32;
 
 
 // Surfaces that will be used
-SDL_Surface* message = NULL;
-SDL_Surface* beginMessage = NULL;
-SDL_Surface* startScreenMessage = NULL;
 SDL_Surface* screen = NULL;
 SDL_Surface* clear = NULL;
 
 // The event structure that will be used
 SDL_Event event;
-
-// The font that's going to be used
-TTF_Font* font = NULL;
-
-// The color of the font
-SDL_Color textColor = { 255, 255, 255 };
-
-// Player avatar properties
-SDL_Surface* player = NULL;
-SDL_Rect* playerRect = NULL;
-
-// Boolean values
-bool level0 = false;
-bool level1 = false;
 
 // Declare the render system
 Render* renderer = NULL;
@@ -145,45 +128,10 @@ bool init()
     return true;
 }
 
-bool load()
-{
-    //Open the font
-    font = TTF_OpenFont( "../assets/fonts/lazy.ttf", 28 );
-    
-    //If there was an error in loading the font
-    if( font == NULL )
-    {
-        return false;
-    }
-    
-    // Load the player's avatar
-    player = load_image( "../assets/images/basic_character.png" );
-    
-    // Check if the image player image loaded
-    if( player == NULL )
-    {
-        return false;
-    }
-    
-    playerRect = &player->clip_rect;
-    
-    //If everything loaded fine
-    return true;
-}
-
 void clean_up()
 {
     //Free the surfaces
-    SDL_FreeSurface( message );
-    SDL_FreeSurface( beginMessage );
-    SDL_FreeSurface( player );
     SDL_FreeSurface( screen );
-    
-    //Close the font that was used
-    TTF_CloseFont( font );
-    
-    //Quit SDL_ttf
-    TTF_Quit();
     
     // Quit Render
     delete renderer;
