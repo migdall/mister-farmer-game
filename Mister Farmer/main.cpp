@@ -217,30 +217,7 @@ int main( int argc, char* args[] )
     }
     
     //Load the files
-    if( load() == false )
-    {
-        return 1;
-    }
-    
-    //Render the text
-    char text[] = "Press 'SPACEBAR' to Start";
-    message = TTF_RenderText_Solid( font, text, textColor );
-    
-    //If there was an error in rendering the text
-    if( message == NULL )
-    {
-        return 1;
-    }
-    
-    //Update the screen
-    if( SDL_Flip( screen ) == -1 )
-    {
-        return 1;
-    }
-    
-    // Render beginMessage text
-    char beginText[] = "Now to begin your adventure";
-    beginMessage = TTF_RenderText_Solid( font, beginText, textColor );
+    Render::load();
     
     //While the user hasn't quit
     while( quit == false )
@@ -260,40 +237,15 @@ int main( int argc, char* args[] )
                 //Set the begin message surface
                 switch( event.key.keysym.sym )
                 {
-                    case SDLK_SPACE: if( level1 == false ) {clearScreen(); message = beginMessage; level0 = true;} break;
-                    case SDLK_RIGHT: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->x += 20;} break;
-                    case SDLK_LEFT: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->x -= 20;} break;
-                    case SDLK_UP: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->y -= 20;} break;
-                    case SDLK_DOWN: if( level0 || level1 ) {clearScreen(); level1 = true; level0 = false; playerRect->y += 20;} break;
+                    case SDLK_ESCAPE:
+                    {
+                        quit = true;
+                        break;
+                    }
                 }
             }
         }
         
-        //If a message needs to be displayed
-        if( message != NULL )
-        {
-            //Apply the message centered on the screen
-            apply_surface( ( SCREEN_WIDTH - message->w ) / 2, ( SCREEN_HEIGHT - message->h ) / 2, message, screen );
-            
-            //Null the surface pointer
-            message = NULL;
-        }
-        
-		if( level0 )
-		{
-            apply_surface( ( SCREEN_WIDTH - player->w ) / 2, 400, player, screen );
-		}
-        
-        if( level1 )
-        {
-            apply_surface( playerRect->x, playerRect->y, player, screen );
-        }
-        
-        //Update the screen
-        if( SDL_Flip( screen ) == -1 )
-        {
-            return 1;
-        }
     }
     
     //Free surfaces and font then quit SDL_ttf and SDL
