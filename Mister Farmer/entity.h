@@ -32,7 +32,13 @@ Created by Jesus A. Noland on 3/2/15.
 
 class Entity
 {
-    // Code implementation goes here
+private:
+	int eid;
+public:
+	Entity();
+	~Entity();
+
+	int get_eid();
 };
 
 #endif
