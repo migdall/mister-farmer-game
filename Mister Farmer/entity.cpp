@@ -38,7 +38,7 @@ Entity::~Entity()
 {
 }
 
-int Render::get_eid()
+int Entity::get_eid()
 {
     // return the entity's eid property
     return eid;
