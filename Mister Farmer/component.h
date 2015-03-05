@@ -20,30 +20,19 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  
- rendercomponent.h
+ component.h
  Mister Farmer
  
- Created by Jesus A. Noland on 7/14/14.
+ Created by Jesus A. Noland on 3/5/15.
  
  */
 
 
-#ifndef Mister_Farmer_rendercomponent_h
-#define Mister_Farmer_rendercomponent_h
+#ifndef Mister_Farmer_component_h
+#define Mister_Farmer_component_h
 
-#include "SDL/SDL.h"
-#include "SDL_image/SDL_image.h"
-#include "SDL_ttf/SDL_ttf.h"
-
-#include "component.h"
-
-class RenderComponent: public Component
+class Component
 {
-private:
-    SDL_Surface* node;
-public:
-    RenderComponent();
-    ~RenderComponent();
 };
 
 #endif
