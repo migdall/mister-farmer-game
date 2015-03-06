@@ -17,6 +17,7 @@
 		836DB234177E63A40050B240 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 836DB233177E63A40050B240 /* main.cpp */; };
 		836DB236177E63A40050B240 /* Mister_Farmer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 836DB235177E63A40050B240 /* Mister_Farmer.1 */; };
 		8397AAFE179FAC8A00A1C4A3 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8397AAFD179FAC8A00A1C4A3 /* render.cpp */; };
+		83BB01E11AA9FC5B00A6BFEC /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83BB01DF1AA9FC5B00A6BFEC /* EntityManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		8397AAFD179FAC8A00A1C4A3 /* render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = render.cpp; sourceTree = "<group>"; };
 		83B24A521974F45200E58BD8 /* gameobject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameobject.h; sourceTree = "<group>"; };
 		83B24A531974F57100E58BD8 /* rendercomponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rendercomponent.h; sourceTree = "<group>"; };
+		83BB01DF1AA9FC5B00A6BFEC /* EntityManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EntityManager.cpp; sourceTree = "<group>"; };
+		83BB01E01AA9FC5B00A6BFEC /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				83B24A521974F45200E58BD8 /* gameobject.h */,
 				83B24A531974F57100E58BD8 /* rendercomponent.h */,
 				8327FEEF1AA98F43007ED1CA /* rendercomponent.cpp */,
+				83BB01DF1AA9FC5B00A6BFEC /* EntityManager.cpp */,
+				83BB01E01AA9FC5B00A6BFEC /* EntityManager.h */,
 			);
 			path = "Mister Farmer";
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				8327FEF01AA98F43007ED1CA /* rendercomponent.cpp in Sources */,
 				836DB234177E63A40050B240 /* main.cpp in Sources */,
 				832BC819177E74C0008D7BFE /* SDLMain.m in Sources */,
+				83BB01E11AA9FC5B00A6BFEC /* EntityManager.cpp in Sources */,
 				8397AAFE179FAC8A00A1C4A3 /* render.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
