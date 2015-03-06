@@ -35,7 +35,7 @@ class Entity
 private:
 	int eid;
 public:
-	Entity();
+	Entity(int num);
 	~Entity();
 
 	int get_eid();
