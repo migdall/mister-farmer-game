@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8327FEEE1AA98D79007ED1CA /* entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8327FEEC1AA98D79007ED1CA /* entity.cpp */; };
+		8327FEF01AA98F43007ED1CA /* rendercomponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8327FEEF1AA98F43007ED1CA /* rendercomponent.cpp */; };
 		832BC810177E746A008D7BFE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC80F177E746A008D7BFE /* Cocoa.framework */; };
 		832BC814177E747E008D7BFE /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC811177E747E008D7BFE /* SDL_image.framework */; };
 		832BC815177E747E008D7BFE /* SDL_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BC812177E747E008D7BFE /* SDL_ttf.framework */; };
@@ -35,6 +36,7 @@
 		8327FEEB1AA98D79007ED1CA /* component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = component.h; sourceTree = "<group>"; };
 		8327FEEC1AA98D79007ED1CA /* entity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = entity.cpp; sourceTree = "<group>"; };
 		8327FEED1AA98D79007ED1CA /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entity.h; sourceTree = "<group>"; };
+		8327FEEF1AA98F43007ED1CA /* rendercomponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rendercomponent.cpp; sourceTree = "<group>"; };
 		832BC80F177E746A008D7BFE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		832BC811177E747E008D7BFE /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../../../../Library/Frameworks/SDL_image.framework; sourceTree = "<group>"; };
 		832BC812177E747E008D7BFE /* SDL_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_ttf.framework; path = ../../../../../../Library/Frameworks/SDL_ttf.framework; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				8397AAFD179FAC8A00A1C4A3 /* render.cpp */,
 				83B24A521974F45200E58BD8 /* gameobject.h */,
 				83B24A531974F57100E58BD8 /* rendercomponent.h */,
+				8327FEEF1AA98F43007ED1CA /* rendercomponent.cpp */,
 			);
 			path = "Mister Farmer";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8327FEEE1AA98D79007ED1CA /* entity.cpp in Sources */,
+				8327FEF01AA98F43007ED1CA /* rendercomponent.cpp in Sources */,
 				836DB234177E63A40050B240 /* main.cpp in Sources */,
 				832BC819177E74C0008D7BFE /* SDLMain.m in Sources */,
 				8397AAFE179FAC8A00A1C4A3 /* render.cpp in Sources */,

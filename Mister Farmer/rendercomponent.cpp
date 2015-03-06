@@ -20,30 +20,22 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  
- rendercomponent.h
+ rendercomponent.cpp
  Mister Farmer
  
- Created by Jesus A. Noland on 7/14/14.
+ Created by Jesus A. Noland on 3/5/15.
  
  */
 
+#include "rendercomponent.h"
 
-#ifndef Mister_Farmer_rendercomponent_h
-#define Mister_Farmer_rendercomponent_h
-
-#include "SDL/SDL.h"
-#include "SDL_image/SDL_image.h"
-#include "SDL_ttf/SDL_ttf.h"
-
-#include "component.h"
-
-class RenderComponent: public Component
+RenderComponent::RenderComponent(SDL_Surface* source)
 {
-private:
-    SDL_Surface* node;
-public:
-    RenderComponent(SDL_Surface* source);
-    ~RenderComponent();
-};
+    node = source;
+}
 
-#endif
+RenderComponent::~RenderComponent()
+{
+    // Destroying the dynamically allocated memory
+    delete node;
+}
