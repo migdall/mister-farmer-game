@@ -31,6 +31,14 @@
 #ifndef __Mister_Farmer__EntityManager__
 #define __Mister_Farmer__EntityManager__
 
-#include <stdio.h>
+class EntityManager
+{
+private:
+    unsigned int generateNewEid;
+public:
+    EntityManager();
+    ~EntityManager();
+};
+
 
 #endif /* defined(__Mister_Farmer__EntityManager__) */
