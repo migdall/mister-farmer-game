@@ -34,7 +34,10 @@
 class EntityManager
 {
 private:
-    unsigned int generateNewEid;
+    // Private properties
+    unsigned int _lowestUnassignedEid;
+    // Private methods
+    unsigned int generateNewEid();
 public:
     EntityManager();
     ~EntityManager();
