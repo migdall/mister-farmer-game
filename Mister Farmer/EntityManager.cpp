@@ -28,3 +28,18 @@
  */
 
 #include "EntityManager.h"
+
+EntityManager::EntityManager()
+{
+	// Set the lowest entity id to zero
+	_lowestUnassignedEid = 0;
+}
+
+EntityManager::~EntityManager()
+{
+}
+
+unsigned int EntityManager::generateNewEid()
+{
+	return _lowestUnassignedEid;
+}
