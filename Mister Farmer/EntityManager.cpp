@@ -29,10 +29,16 @@
 
 #include "EntityManager.h"
 
+
+// Implement static member variables
+unsigned int EntityManager::ENTITY_ID_MAX = 100;
+
+
+// Implementing the Constructor method for the EntityManager
 EntityManager::EntityManager()
 {
-	// Set the lowest entity id to zero
-	_lowestUnassignedEid = 0;
+    // Set the lowest entity id to zero
+    _lowestUnassignedEid = 0;
 }
 
 EntityManager::~EntityManager()
@@ -41,5 +47,11 @@ EntityManager::~EntityManager()
 
 unsigned int EntityManager::generateNewEid()
 {
-	return _lowestUnassignedEid;
+    if ( _lowestUnassignedEid < ENTITY_ID_MAX ) {
+        return _lowestUnassignedEid++;
+    }
+
+    // If we run out of entity ids then return negative one
+    // Meaning don't create anymore entities
+    return -1;
 }

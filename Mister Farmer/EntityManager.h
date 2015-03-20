@@ -34,6 +34,8 @@
 class EntityManager
 {
 private:
+    // Static members
+    static unsigned int ENTITY_ID_MAX;
     // Private properties
     unsigned int _lowestUnassignedEid;
     // Private methods
