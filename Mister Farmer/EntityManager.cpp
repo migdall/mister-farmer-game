@@ -55,3 +55,9 @@ unsigned int EntityManager::generateNewEid()
     // Meaning don't create anymore entities
     return -1;
 }
+
+Entity * EntityManager::createEntity()
+{
+    unsigned int new_eid = generateNewEid();
+    return new Entity(new_eid);
+}

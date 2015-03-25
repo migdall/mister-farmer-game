@@ -31,6 +31,9 @@
 #ifndef __Mister_Farmer__EntityManager__
 #define __Mister_Farmer__EntityManager__
 
+// Import header files
+#include "entity.h"
+
 class EntityManager
 {
 private:
@@ -43,6 +46,9 @@ private:
 public:
     EntityManager();
     ~EntityManager();
+    
+    // Public member methods
+    Entity * createEntity();
 };
 
 
