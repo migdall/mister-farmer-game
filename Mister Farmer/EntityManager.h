@@ -32,6 +32,8 @@
 #define __Mister_Farmer__EntityManager__
 
 // Import header files
+#include <vector>
+
 #include "entity.h"
 
 class EntityManager
@@ -40,6 +42,7 @@ private:
     // Static members
     static unsigned int ENTITY_ID_MAX;
     // Private properties
+    std::vector<Entity *> _entities;
     unsigned int _lowestUnassignedEid;
     // Private methods
     unsigned int generateNewEid();
