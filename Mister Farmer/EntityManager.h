@@ -42,7 +42,10 @@ private:
     // Static members
     static unsigned int ENTITY_ID_MAX;
     // Private properties
-    std::vector<Entity *> _entities;
+    
+    // A mutable array to hold the entity ids that are generated
+    std::vector<int> _entities;
+    
     unsigned int _lowestUnassignedEid;
     // Private methods
     unsigned int generateNewEid();
@@ -52,6 +55,7 @@ public:
     
     // Public member methods
     Entity * createEntity();
+    void addComponent();
 };
 
 

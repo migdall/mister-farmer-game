@@ -59,5 +59,10 @@ unsigned int EntityManager::generateNewEid()
 Entity * EntityManager::createEntity()
 {
     unsigned int new_eid = generateNewEid();
+    
+    // Add new Entity to _entities
+    _entities.push_back( new_eid );
+    
+    // Return the new entity
     return new Entity(new_eid);
 }
