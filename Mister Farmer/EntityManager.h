@@ -33,8 +33,11 @@
 
 // Import header files
 #include <vector>
+#include <string>
+#include <unordered_map>
 
 #include "entity.h"
+#include "component.h"
 
 class EntityManager
 {
@@ -45,6 +48,8 @@ private:
     
     // A mutable array to hold the entity ids that are generated
     std::vector<int> _entities;
+    // A mutable dictionary to hold the components
+    std::unordered_map<std::string, std::unordered_map<int, Component *>> _componentsByClass;
     
     unsigned int _lowestUnassignedEid;
     // Private methods
@@ -56,6 +61,7 @@ public:
     // Public member methods
     Entity * createEntity();
     void addComponent();
+    Component * getComponentOfClass();
 };
 
 
